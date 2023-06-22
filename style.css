@@ -1,0 +1,642 @@
+/* font poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.logo span {
+  color: #f0ec0ff1;
+}
+ul {
+  list-style: none;
+}
+
+.active-home {
+  color: #f0ec0ff1;
+  font-weight: bold;
+}
+
+.active-home:hover {
+    color: whitesmoke;
+}
+
+
+/* navbar ya */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav-links a:hover {
+  color: #f0ec0ff1;
+}
+
+.nav-links li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    bottom: 10px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.nav-links li:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nav-links li {
+  margin: 0 30px;
+  position: relative;
+}
+
+.nav-links li:hover {
+    color: #f0ec0ff1;
+}
+
+
+
+
+
+header {
+  width: 100;
+  height: 100vh;
+  background-image: url("./assets/rusabaru-min.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 185px;
+  height: 4px;
+  /* background-color: #e2e61c; */
+  background-color: #f0ec0fd0;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  background-color: #f0ec0ff1;
+  padding: 8px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ctn-gelap {
+    background-color: #f0ec0f7a;
+  padding: 8px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ctn:hover {
+    color: #f0ec0fd0;
+    background-color: #ffffff;
+}
+.ctn-gelap:hover {
+    color: #f0ec0fd0;
+    background-color: #ffffff;
+}
+
+.mobile-btn {
+  position: absolute;
+  top: 42px;
+  right: 30px;
+  width: 16px;
+  cursor: pointer;
+  display: none !important;
+}
+
+/* events */
+section {
+  width: 100%;
+  margin: 40px auto;  
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+}
+
+.row-ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+
+.col img {
+  width: 360px;
+  height: 180px;
+}
+
+.events .row {
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+
+p {
+  color: #7c7c7c;
+  padding: 0px 26px 30px 0;
+  text-align: justify;
+  width: 25em;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+/* jelajah kota bogor */
+.jelajah {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/gunungTahu-min.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0;
+}
+
+.jelajah-content {
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jelajah-content h1 {
+  text-align: center;
+  font-size: 7vmin;
+  display: flex;
+  font-weight: 800;
+}
+
+.jelajah-content .line {
+  margin-bottom: 50px;
+}
+.jelajah-content p {
+  color: rgb(221, 221, 221);
+  width: 150%;
+}
+
+.jelajah-content ctn {
+  margin-top: 40px;
+}
+
+/* section scrolling picture */
+
+.content-col {
+  max-width: 160%;
+}
+
+.content-col h1 {
+  font-size: 4.8vmin;
+  color: #484872;
+  margin-left: 50px;
+}
+
+.content-col .line {
+  margin-left: 90px;
+}
+
+.content-col p {
+  padding: 0;
+  margin: 25px auto;
+}
+
+.content-col .ctn {
+margin-right:120px ;
+display: flex;
+justify-content:end;
+width: 50%;
+
+}
+
+.tours {
+  margin-right: 210px;
+}
+
+.tours .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.tours .row li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  margin-top: 20px;
+  flex-direction: row-reverse;
+}
+
+.scrollKanan {
+  display: none;
+}
+
+.img-slide {
+  vertical-align: middle;
+  filter: brightness(89%);
+  transition: transform .3s ease ;
+
+}
+
+.img-slide:hover {
+  transform: scale(0.9);
+}
+
+.slideshow-container {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #484872;
+  font-size: 20px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade .line {
+  width: 120px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.bulat {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* aside data profil */
+aside {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: linear-gradient(#f0ec0ff1, #f0ec0ff1 45%, #fff 45%, #fff 100%);
+}
+.card {
+  position: relative;
+  width: 400px;
+  height: 380px;
+  background: #fff;
+  border-radius: 10px;
+  /*  */
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 222, 222, 0.5);
+  backdrop-filter: blur(15px);
+  /* box-shadow: 0px 9px 7px 5px rgba(0,0,0,0.59); */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.img-bx {
+  position: absolute;
+  top: -10px;
+  left: -113px;
+  width: 155%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: translateY(30px) scale(0.5);
+  transform-origin: top;
+}
+
+.img-bx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 28px;
+}
+
+.content .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content .detail h2 {
+  color: #444;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.content .detail h2 span {
+  font-size: 0.6em;
+  color: #f0ec0ff1;
+  font-weight: bold;
+}
+
+.sci {
+  position: relative;
+  display: flex;
+  margin-top: 8px;
+}
+
+.sci li {
+  list-style: none;
+  margin: 4px;
+}
+
+.sci li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.5em;
+  color: #444;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  background: #f0ec0ff1;
+  color: #fff;
+
+}
+
+/* footer bro */
+.footer {
+  background-color: #f0ec0ff1;
+  padding: 7px;
+ 
+}
+
+.footer p {
+  width: 100%;
+  height: 40px;
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 17px;
+}
+
+
+
+/* mdia query dari mobile */
+
+@media only screen and (max-width: 850px) {
+    .mobile-btn {
+      display: block !important;
+    }
+    .navbar {
+      padding: 0;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  
+    .nav-links {
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      background-color: #484872;
+      margin-top: -900px;
+      transition: all 0.5s ease;
+    }
+  
+    .mobile-menu {
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+      margin: 30px auto;
+    }
+  
+    .row-ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    section {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+    .col img {
+      width: 78%;
+      height: 40%;
+    }
+    h4 {
+      font-size: 3.2vmin;
+      color: #484872;
+      margin: 20px auto;
+    }
+    
+    p {
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    /* jelajah start */
+    .jelajah-content p {
+      color: rgb(221, 221, 221);
+      width: 200%;
+      text-align: left;
+    }
+
+    .jelajah-content .ctn-gelap {
+      margin: 30px 62px;
+      display: flex;
+      justify-content: center;
+      width: 150%;
+      text-align: center;
+        }
+
+
+    /* jelajah end */
+    .events .ctn {
+      margin: 0 62px;
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      text-align: center;
+    }
+
+    /* tours misi terakhir */
+    .content-col h1 {
+      width: 70%;
+      text-align: center;
+      margin-right: 200px;
+    }
+    .content-col p {
+      width: 100%;
+      text-align: left;
+      margin-left: 20px;
+    }
+    .content-col .ctn {
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      text-align: center;
+    }
+
+    .tours .row {
+      flex-direction: column;
+    }
+  
+    .tours .row li {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+    }
+  
+    .tours .row li img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .tours .row li .ctn {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .slideshow-container {
+      max-width: 100%;
+    }
+  
+    .slideshow-container .numbertext {
+      font-size: 10px;
+    }
+  
+    .content-col .ctn {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+}
+
+
+/* animation sedikit buat gambar */
+.img-event {
+  transition: transform .3s ease ;
+
+}
+
+.img-event:hover {
+  transform: scale(1.1);
+}
